@@ -6,7 +6,7 @@ import os
 from huggingface_hub import hf_hub_download
 
 # Hugging Face model details
-MODEL_REPO = "your-username/image-forgery-model"
+MODEL_REPO = "yuvinraja/image-forgery-model"
 MODEL_FILENAME = "model_casia_run1.h5"
 
 # Function to download model
