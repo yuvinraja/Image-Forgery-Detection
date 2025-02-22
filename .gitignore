@@ -28,3 +28,5 @@ pip-delete-this-directory.txt
 
 # Ignore Streamlit session state files
 .streamlit/
+
+temp_file.jpg
