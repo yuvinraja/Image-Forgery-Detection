@@ -8,13 +8,16 @@ certifi==2025.1.31
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
+filelock==3.17.0
 flatbuffers==25.2.10
+fsspec==2025.2.0
 gast==0.6.0
 gitdb==4.0.12
 GitPython==3.1.44
 google-pasta==0.2.0
 grpcio==1.70.0
 h5py==3.13.0
+huggingface-hub==0.29.1
 idna==3.10
 Jinja2==3.1.5
 jsonschema==4.23.0
@@ -40,6 +43,7 @@ pydeck==0.9.1
 Pygments==2.19.1
 python-dateutil==2.9.0.post0
 pytz==2025.1
+PyYAML==6.0.2
 referencing==0.36.2
 requests==2.32.3
 rich==13.9.4
@@ -56,6 +60,7 @@ tensorflow_intel==2.18.0
 termcolor==2.5.0
 toml==0.10.2
 tornado==6.4.2
+tqdm==4.67.1
 typing_extensions==4.12.2
 tzdata==2025.1
 urllib3==2.3.0

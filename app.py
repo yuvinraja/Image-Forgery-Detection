@@ -3,6 +3,28 @@ import numpy as np
 from PIL import Image, ImageChops, ImageEnhance
 import tensorflow as tf
 import os
+from huggingface_hub import hf_hub_download
+
+# Hugging Face model details
+MODEL_REPO = "your-username/image-forgery-model"
+MODEL_FILENAME = "model_casia_run1.h5"
+
+# Function to download model
+def download_model():
+    if not os.path.exists(MODEL_FILENAME):
+        st.info("Downloading model from Hugging Face...")
+        hf_hub_download(repo_id=MODEL_REPO, filename=MODEL_FILENAME, local_dir=".")
+        st.success("Model downloaded successfully!")
+
+# Load model
+@st.cache_resource
+def load_model():
+    download_model()
+    return tf.keras.models.load_model(MODEL_FILENAME, compile=False)
+
+# Initialize model
+model = load_model()
+st.write("Model Loaded Successfully! ✅")
 
 # Define the ELA function
 def convert_to_ela_image(image, quality=91):
@@ -25,13 +47,13 @@ def convert_to_ela_image(image, quality=91):
 
     return ela_image
 
-# Load the trained model
-MODEL_PATH = "model_casia_run1.h5"
-@st.cache_resource
-def load_model():
-    return tf.keras.models.load_model(MODEL_PATH, compile=False)
+# # Load the trained model
+# MODEL_PATH = "model_casia_run1.h5"
+# @st.cache_resource
+# def load_model():
+#     return tf.keras.models.load_model(MODEL_PATH, compile=False)
 
-model = load_model()
+# model = load_model()
 
 # Image preprocessing function
 def prepare_image(image):
