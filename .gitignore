@@ -1,0 +1,30 @@
+# Ignore virtual environment
+venv/
+*.venv/
+env/
+*.env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore dependencies (if using requirements.txt)
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore model files (optional, if the model is large)
+*.h5
+*.hdf5
+
+# Ignore Streamlit session state files
+.streamlit/
