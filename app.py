@@ -10,14 +10,6 @@ import io
 MODEL_REPO = "yuvinraja/image-forgery-model"
 MODEL_FILENAME = "model_casia_run1.h5"
 
-# Sidebar with instructions
-st.sidebar.title("ℹ️ How to Use")
-st.sidebar.write("""
-1️⃣ Upload an image (JPG/PNG).  
-2️⃣ The app generates the **ELA image**.  
-3️⃣ The **model predicts** whether the image is **Real** or **Fake**.  
-4️⃣ Download the **ELA image** for reference.  
-""")
 
 # Function to download model
 def download_model():
