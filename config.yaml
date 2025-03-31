@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    yuvinraja:
+      email: yuvinraja@gmail.com
+      name: Yuvin Raja
+      password: $2b$12$WHnNnaPTUVFs5MsI1rg0jeyunNHO8X/YnHCbhzHUT0pQRySvotu/u
+    sundarmurthy:
+      email: sundarmurthy@gmail.com
+      name: Sundar Murthy
+      password: $2b$12$6QvxuPZsi7FxbE6haIkBReM58Kj6hIovEvgn0MrNJWhb1TVrMXlGa
+cookie:
+  expiry_days: 30
+  key: random_signature_key
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - user@example.com
